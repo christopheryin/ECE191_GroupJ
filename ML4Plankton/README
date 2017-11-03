@@ -1,11 +1,30 @@
 Notes
 
-- The weights file needs to be downloaded separately, too large for GitHub I think. Not sure why my .gitignore isn't
-    doing what I think it should be doing rn, gotta fix that.
+Data folder structure:
+
+data/
+	train/
+		sand/
+			sand001
+			sand002
+			...
+		other/
+			other001
+			other002
+			...
+	test/
+		sand/
+			sand001
+			sand002
+			...
+		other/
+			other001
+			other002
+			...
+
+- The weights file needs to be downloaded separately, too large for GitHub I think.
 
 
 train1.py - trains from scrach
-train2.py - loads weights for all layers except last dense layer (i.e. the output layer), progressively unfreezes layers
-    and trains; need to decide how many layers back should be unfrozen
-train3.py - loads weights for all convolutional layers and freezes convolutional layers, but randomly initializes weights
-    for dense layers + trains them
+train2.py - loads weights for all layers except last dense layer (i.e. the output layer), progressively unfreezes layers and trains; need to decide how many layers back should be unfrozen
+train3.py - loads weights for all convolutional layers and freezes convolutional layers, but randomly initializes weights for dense layers + trains them
