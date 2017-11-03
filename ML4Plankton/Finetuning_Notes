@@ -1,0 +1,5 @@
+Notes on Fine-tuning strategies
+
+1) Progressively unfreeze + train layers beginning w/ last fully-connected layer + moving backwards
+    - can change how deep into the convolutional layers you want to unfreeze
+2) Train fully-connected layers only, keeping convolutional layers totally frozen
