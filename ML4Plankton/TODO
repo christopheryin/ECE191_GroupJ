@@ -1,6 +1,4 @@
 1) check all layer names + definitions are up to date w/ keras
 2) fix all unresolved function calls
-    - figure out convnets-keras
-3) fix git
-4) write scripts to obtain + filter images
-5) try running + debuuuuuuuuuuug
+3) write scripts to obtain + filter images
+4) try running + debuuuuuuuuuuug

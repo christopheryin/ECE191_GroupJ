@@ -62,7 +62,7 @@ def get_alexnet(input_shape, nb_classes, mean_flag,fc_flag):
 
     if(fc_flag):
         dense_1 = Dense(4096, activation='relu', name='dense_1_new', init='he_normal')(dense_1)
-    else
+    else:
         dense_1 = Dense(4096, activation='relu', name='dense_1', init='he_normal')(dense_1)
 
     dense_2 = Dropout(0.5)(dense_1)

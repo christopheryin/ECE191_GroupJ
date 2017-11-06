@@ -22,9 +22,11 @@ data/
 			other002
 			...
 
-- The weights file needs to be downloaded separately, too large for GitHub I think.
+- The weights file needs to be downloaded separately, use this link: http://files.heuritech.com/weights/alexnet_weights.h5
 
 
 train1.py - trains from scrach
 train2.py - loads weights for all layers except last dense layer (i.e. the output layer), progressively unfreezes layers and trains; need to decide how many layers back should be unfrozen
 train3.py - loads weights for all convolutional layers and freezes convolutional layers, but randomly initializes weights for dense layers + trains them
+
+
