@@ -39,7 +39,7 @@ train_generator = train_datagen.flow_from_directory(
     class_mode='binary')
 
 validation_generator = validation_datagen.flow_from_directory(
-    validation_path
+    validation_path,
     batch_size = batch_size,
     target_size = (height, width),
     class_mode = 'binary')
