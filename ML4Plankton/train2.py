@@ -12,8 +12,8 @@ from utils import *
 
 #set hyperparameters + image parameters
 batch_size = 16
-height = 277
-width = 277
+height = 227
+width = 227
 input_size = (3,height,width)
 num_classes = 2
 mean_flag = True    #perform mean subtraction on images in AlexNet
@@ -66,7 +66,7 @@ for i, layer in enumerate(layers):
                     metrics=['accuracy'])
 
     for epoch in range(epochs[i]):
-        history = alexnet.fit_generator(train_generator,
+        h = alexnet.fit_generator(train_generator,
                                         samples_per_epoch = samples_per_epoch,
                                         validation_data = validation_generator,
                                         nb_val_samples = nb_val_samples,

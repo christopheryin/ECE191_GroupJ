@@ -12,8 +12,8 @@ from utils import *
 
 #set hyperparameters + image parameters
 batch_size = 16
-height = 277
-width = 277
+height = 227
+width = 227
 input_size = (3,height,width)
 num_classes = 2
 mean_flag = True    #perform mean subtraction on images in AlexNet
